@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "1f9258c1-b1f2-4279-9cfb-c49c98e0d9e1",
+		"name": "Assignment 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29637214"
+	},
+	"item": [
+		{
+			"name": "1. Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Sunshine\",\r\n  \"password\": \"password\",\r\n  \"email\": \"sunisshining@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/user/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "2.User Log-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Sunshine\",\r\n  \"password\": \"password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "3.Get All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/emp/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "4.Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Peter\",\r\n  \"last_name\": \"Parker\",\r\n  \"email\": \"Peter.Parker@gmail.com\",\r\n  \"gender\": \"Male\",\r\n  \"salary\": 85000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/emp/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "5.Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/emp/employees/{eid}"
+			},
+			"response": []
+		},
+		{
+			"name": "6.Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Said\",\r\n  \"last_name\": \"Mohamed\",\r\n  \"email\": \"Said.Mohamed@gmail.com\",\r\n  \"gender\": \"Male\",\r\n  \"salary\": 90000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/emp/employees/652c2b522b50d55d6858b1f1"
+			},
+			"response": []
+		},
+		{
+			"name": "7.Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/emp/employees/{eid}"
+			},
+			"response": []
+		}
+	]
+}
